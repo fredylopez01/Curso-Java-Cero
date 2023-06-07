@@ -10,17 +10,17 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class J35RGB extends JFrame implements ActionListener {
-	private JComboBox optionsOne;
+	private JComboBox<String> optionsOne;
 	private JLabel red;
-	private JComboBox optionsTwo;
+	private JComboBox<String> optionsTwo;
 	private JLabel green;
-	private JComboBox optionsThree;
+	private JComboBox<String> optionsThree;
 	private JLabel blue;
 	private JButton apply;
 	
 	public J35RGB() {
 		setLayout(null);
-		optionsOne = new JComboBox();
+		optionsOne = new JComboBox<String>();
 		optionsOne.setBounds(120, 20, 80, 20);
 		for(int i = 0; i <= 255; i++) {
 			optionsOne.addItem(String.valueOf(i));
@@ -31,7 +31,7 @@ public class J35RGB extends JFrame implements ActionListener {
 		red.setBounds(20, 20, 80, 20);
 		add(red);
 		
-		optionsTwo = new JComboBox();
+		optionsTwo = new JComboBox<String>();
 		optionsTwo.setBounds(120, 60, 80, 20);
 		for(int i = 0; i <= 255; i++) {
 			optionsTwo.addItem(String.valueOf(i));
@@ -42,7 +42,7 @@ public class J35RGB extends JFrame implements ActionListener {
 		green.setBounds(20, 60, 80, 20);
 		add(green);
 		
-		optionsThree = new JComboBox();
+		optionsThree = new JComboBox<String>();
 		optionsThree.setBounds(120, 100, 80, 20);
 		add(optionsThree);
 		
